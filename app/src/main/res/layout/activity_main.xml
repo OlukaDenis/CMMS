@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="10"
+    tools:context=".admin.MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="6"
+        android:background="@color/colorPrimary"
+        android:orientation="vertical"
+        android:padding="12dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Welcome Admin"
+            android:gravity="center"
+            android:layout_margin="8dp"
+            android:textColor="@color/primaryTextColor"
+            android:textSize="48sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:textColor="@color/primaryTextColor"
+            android:text="Roles"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="16dp"
+            android:background="@color/primaryTextColor"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/primaryTextColor"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:text="@string/roles"
+            android:layout_marginTop="28dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_margin="16dp"
+        android:weightSum="12">
+
+        <Button
+            android:id="@+id/btn_employee"
+            android:layout_weight="6"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="EMPLOYEES"
+            android:textSize="18sp"
+            android:textColor="@color/primaryTextColor"
+            android:background="@color/colorAccent"
+            tools:ignore="NestedWeights"
+            android:layout_marginEnd="2dp"
+            android:layout_marginRight="2dp" />
+
+        <Button
+            android:id="@+id/btn_maintenace"
+            android:layout_weight="6"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="MAINTENANCE"
+            android:textSize="18sp"
+            android:layout_marginStart="2dp"
+            android:layout_marginLeft="2dp"
+            android:textColor="@color/primaryTextColor"
+            android:background="@color/colorAccent"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>
